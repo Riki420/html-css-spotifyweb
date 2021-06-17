@@ -117,7 +117,7 @@ nav .second-nav a{
 /******SEZIONE ALBUM*****/
 .sctn-albm{
     background-color: #141922;
-    padding: 100px 0;  
+    padding: 100px 10px;  
     width: 80%;  
     float: right;
 }
