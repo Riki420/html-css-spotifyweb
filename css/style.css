@@ -150,7 +150,7 @@ nav .second-nav a{
     /* height: 300px; */
     margin: 0 5px;
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: no-wrap;
     flex-direction: column;
     
 }
