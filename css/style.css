@@ -63,10 +63,16 @@ nav{
 nav .main-nav,
 nav .second-nav{
     margin-top: 20px;
+    margin-bottom: 20px;
     list-style-type: none;
+
 }
 
+nav .main-nav li,
+nav .second-nav li{
+    margin-bottom: 10px;
 
+}
 
 nav .main-nav a,
 nav .second-nav a{
@@ -74,6 +80,31 @@ nav .second-nav a{
     color: white;
 }
 
+.second-nav li:first-child{
+    margin-bottom: 20px;
+    vertical-align: sub;
+    line-height: 30px;
+}
+
+
+.btn-plus{
+    font-size: 1.5em;
+    background-color: grey;
+    width: 30px;
+    height: 30px;
+    float: left;
+    margin-right: 10px;
+}
+
+.btn-plus::after{
+    font-size: 1.5em;
+    background-color: grey;
+    width: 30px;
+    height: 30px;
+    float: left;
+    content: '+';
+    text-align: center;
+}
 
 #logo{
     width: 60%;
