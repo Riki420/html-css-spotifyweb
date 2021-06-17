@@ -15,20 +15,41 @@
     
 }
 
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+/*HEADER*/
+
 header{
-    background-color: rgba(17, 16, 19, 0.7);
+    background-color: rgba(17, 16, 19, 0.9);
     min-height: 10vh;
+    width: 100%;
     position: fixed;
     z-index: 1;
+    text-align: right;
 }
+.btn{
+    font-size: 1.2em;
+    padding: 10px 50px;
+    border: 1px solid #fff;
+    border-radius: 220px;
+    color: #fff;
+    line-height: 10vh;
+    margin-right: 10px;
+    text-decoration: none;
+}
+
+
 
 nav{
     background-color: rgb(1, 1, 61);
-    width: 25%;
+    width: 20%;
     position: fixed;
     z-index: 2;
     height: 90vh;
     overflow: hidden;
+    float: left;
 }
 
 
@@ -36,7 +57,7 @@ nav{
     background-color: brown;
     overflow-y: scroll;
     flex-basis: 100%;
-
+    
 }
 
 
