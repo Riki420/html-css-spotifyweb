@@ -83,6 +83,11 @@ nav .second-nav a{
     color: white;
 }
 
+.second-nav{
+    overflow-y: auto;
+    height: 600px;
+}
+
 .second-nav li:first-child{
     margin-bottom: 20px;
     vertical-align: sub;
@@ -112,24 +117,61 @@ nav .second-nav a{
 /******SEZIONE ALBUM*****/
 .sctn-albm{
     background-color: #141922;
-    padding: 100px;  
+    padding: 100px 0;  
     width: 80%;  
     float: right;
 }
-
-
-
-
 
 .nav-albm ul{
     list-style-type: none;
     color: #fff;
     text-align: center;
+    margin-bottom: 20px;
 }
 
 .nav-albm ul li{
     display: inline;
     margin-right: 20px;
+}
+
+.row{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.col{
+    flex-basis: calc(100% / 6 - 10px);
+    /* border: 1px solid #fff; */
+    /* height: 300px; */
+    margin: 0 5px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    
+}
+
+.title-song{
+    font-size: 1.1em;
+}
+
+.sub-song{
+    color: grey;
+    
+}
+
+.col .title-song,
+.col .sub-song{
+    margin-top: 10px;
+    text-align: center;
+}
+
+.circle{
+    border-radius: 50%;
 }
 
 
@@ -142,4 +184,5 @@ footer{
     left: 0;
     background-color: #282828;
     width: 100%;
+    z-index: 2;
 }
