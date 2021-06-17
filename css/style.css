@@ -41,6 +41,6 @@ footer{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    background-color: brown;
+    background-color: grey;
     width: 100%;
 }
