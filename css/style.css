@@ -54,10 +54,9 @@ nav{
 
 
 .sctn-albm{
-    background-color: brown;
-    overflow-y: scroll;
-    flex-basis: 100%;
-    
+    padding: 20px;  
+    width: 80%;  
+    float: right;
 }
 
 
