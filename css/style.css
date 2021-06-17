@@ -5,15 +5,7 @@
     box-sizing: border-box;
 }
 
-
-.container-flex{
-    max-width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    height: 90vh;
-    
-}
+/*Generics*/
 
 body{
     font-family: 'Roboto', sans-serif;
@@ -25,7 +17,16 @@ img{
     width: 100%;
 }
 
-/*HEADER*/
+#logo{
+    width: 60%;
+}
+
+.icon{
+    width: 12%;
+    vertical-align: sub;
+}
+
+/*****HEADER******/
 
 header{
     background-color: rgba(17, 16, 19, 0.9);
@@ -46,7 +47,9 @@ header{
     text-decoration: none;
 }
 
-/*NAV*/
+
+
+/****NAV*****/
 
 nav{
     background-color: #000;
@@ -86,7 +89,7 @@ nav .second-nav a{
     line-height: 30px;
 }
 
-
+/******BOTTONE AGGIUNGI PLAYLIST*****/
 .btn-plus{
     font-size: 1.5em;
     background-color: grey;
@@ -106,23 +109,31 @@ nav .second-nav a{
     text-align: center;
 }
 
-#logo{
-    width: 60%;
-}
-
-.icon{
-    width: 12%;
-    vertical-align: sub;
-}
-
-
+/******SEZIONE ALBUM*****/
 .sctn-albm{
     background-color: #141922;
-    padding: 10px;  
+    padding: 100px;  
     width: 80%;  
     float: right;
 }
 
+
+
+
+
+.nav-albm ul{
+    list-style-type: none;
+    color: #fff;
+    text-align: center;
+}
+
+.nav-albm ul li{
+    display: inline;
+    margin-right: 20px;
+}
+
+
+/****SEZIONE DEL PLAYER****/
 
 footer{
     min-height: 10vh;
