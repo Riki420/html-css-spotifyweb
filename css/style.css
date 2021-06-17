@@ -46,7 +46,7 @@ header{
     text-decoration: none;
 }
 
-
+/*NAV*/
 
 nav{
     background-color: #000;
@@ -60,8 +60,28 @@ nav{
     padding: 20px;
 }
 
+nav .main-nav,
+nav .second-nav{
+    margin-top: 20px;
+    list-style-type: none;
+}
+
+
+
+nav .main-nav a,
+nav .second-nav a{
+    text-decoration: none;
+    color: white;
+}
+
+
 #logo{
     width: 60%;
+}
+
+.icon{
+    width: 12%;
+    vertical-align: sub;
 }
 
 
