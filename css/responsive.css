@@ -1,10 +1,11 @@
+/*BREAKPOINT MD*/
 @media screen and (max-width: 768px){
     .icon-save {
         line-height: 0px;
         margin-right: 0px;
+        margin-top: 30px;
     }
     
-
 
    .col{
        flex-basis: calc(100% / 4 - 10px);
@@ -15,7 +16,10 @@
    }
 
 
+
 }
+
+/*BREAKPOINT SM*/
 
 @media screen and (max-width: 576px){
     .icon-save {
@@ -36,7 +40,9 @@
 
 }
 
-@media screen and (max-width: 360px){
+/*BREAKPOINT XS*/
+
+@media screen and (max-width: 375px){
     .icon-save {
         line-height: 0px;
         margin-right: 0px;
@@ -52,8 +58,12 @@
         flex-direction: column;
    }
 
-   .nav{
+   nav{
        width: 60px;
+   }
+   
+   header{
+       width: calc(100% - 60px);
    }
 
 }
