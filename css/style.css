@@ -86,7 +86,6 @@ nav .second-nav a{
 
 .second-nav{
     overflow-y: auto;
-    height: 600px;
 }
 
 .second-nav li:first-child{
@@ -118,19 +117,22 @@ nav .second-nav a{
 /******SEZIONE ALBUM*****/
 main{
     flex-grow: 1;
-    background-color: blue;
+    background-color: #141922;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     overflow-y: scroll;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: calc(100% - 230px);
+    height: 100%;
+    padding-top: 100px;
     
 }
 .sctn-albm{
-    height: calc(100vh - 200px);
+    
     overflow-y: scroll;
-    width: calc(100% - 230px);
+    flex-basis: calc(100vh - 200px);
 }
 
 .nav-albm ul{
@@ -147,8 +149,8 @@ main{
 
 .row{
     display: flex;
-    align-items: center;
-    flex-wrap: wrap;
+    align-items: flex-start;
+    /* flex-wrap: wrap; */
     flex-direction: row;
     margin-top: 20px;
     margin-bottom: 20px;
@@ -162,7 +164,6 @@ main{
     display: flex;
     flex-wrap: no-wrap;
     flex-direction: column;
-    justify-content: flex-start;
     
 }
 
@@ -190,6 +191,6 @@ main{
 
 footer{
     height: 100px;
-    background-color: blueviolet;
+    background-color: #282828;
     width: 100%;
 }
