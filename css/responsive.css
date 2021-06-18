@@ -1,27 +1,16 @@
 @media screen and (max-width: 768px){
-    .made-for-md{
-        flex-grow: 1;
+    .icon-save {
+        line-height: 0px;
+        margin-right: 0px;
     }
+    
 
-    .row-md{
+
+   .col{
+       flex-basis: calc(100% / 4 - 10px);
+       margin: 0 5px;
         display: flex;
-        flex-direction: column;
         flex-wrap: wrap;
-        justify-content: flex-start;
-        align-items: center;
-        flex-grow: 1;
-    }
-    .row-md .col{
-    width: 50%;
-    margin: 0 5px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    }
-    
-}
-
-@media screen and (max-width: 576px){
-   
-    
+        flex-direction: column;
+   }
 }

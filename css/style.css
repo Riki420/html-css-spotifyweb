@@ -34,10 +34,19 @@ img{
     
 }
 
+.w-25{
+    width: 25%;
+}
+
+.w-50{
+    width: 50%;
+}
+
+
 /*****HEADER******/
 
 header{
-    background-color: rgba(17, 16, 19, 0.9);
+    background-color: rgba(17, 16, 19, 0.5);
     height: 100px;
     width: calc(100% - 230px);
     position: fixed;
@@ -204,7 +213,7 @@ main{
 .row{
     display: flex;
     align-items: flex-start;
-    /* flex-wrap: wrap; */
+    flex-wrap: wrap;
     flex-direction: row;
 }
 
@@ -213,7 +222,7 @@ main{
     /* border: 1px solid #fff; */
     margin: 0 5px;
     display: flex;
-    flex-wrap: no-wrap;
+    flex-wrap: wrap;
     flex-direction: column;
 
     
@@ -264,12 +273,14 @@ footer{
     
 }
 .player-col{
-    flex-basis: calc(100% / 3);
     /* border: 1px solid #fff; */
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-between;
+    align-content: center;
+    background-color: #282828;
+
 
 }
 
@@ -280,16 +291,27 @@ footer{
     /* border: 1px solid #fff; */
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
+    flex-direction: row;    
+    background-color: #282828;
+    height: 100px;
+
 }
 
 .text-player{
-    vertical-align: center;
-    position: relative;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .text-player h4{
-    margin-bottom: -10px;
+    margin-bottom: 5px;
+    font-size: 1em;
+}
+
+.text-player p{
+    color: grey;
+    font-size: 0.8em;
 }
 
 .icon-save{
@@ -300,14 +322,41 @@ footer{
 .far,
 .fas{
     margin-right: 20px;
+    margin-bottom: 10px;
 }
 
-.line{
-    margin-top: 20px;
+.line-full{
+    margin-left: 5px;
+    margin-right: 5px;
     width: 100%;
     height: 10px;
     background-color: grey;
+    border-radius: 4px;
+    
 }
+
+.line-small{
+    width: 30%;
+    height: 10px;
+    background-color: #fff;
+    border-radius: 4px;
+}
+.volume{
+    flex-grow: 1;
+    line-height: 100px;
+}
+
+.line-volume{
+    width: 80%;
+    height: 10px;
+    background-color: #dada;
+    margin: 0 5px;
+    border-radius: 4px;
+
+}
+
+
+
 
 .column-flex{
     display: flex;
@@ -318,6 +367,27 @@ footer{
     text-align: center;
     flex-grow: 1;
 }
+
+footer .fas:last-child{
+    margin-right: 0;
+}
+
+.play-bottom{
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    line-height: 10px;
+}
+
+.icon-vol{
+    font-size: 0.8em;
+    display: flex;
+    justify-content: right;
+
+}
+
 
 
 /****EFFETTI HOVER***/
