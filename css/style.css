@@ -57,6 +57,14 @@ header{
 
 }
 
+.mt-20{
+    margin-top: 20px;
+}
+
+.mb-20{
+    margin-bottom: 20px;
+}
+
 
 
 /****NAV*****/
@@ -64,7 +72,7 @@ header{
 nav{
     background-color: #000;
     width: 230px;  
-    padding: 10px;  
+    padding: 20px;  
 }
 
 nav .main-nav,
@@ -95,6 +103,34 @@ nav .second-nav a{
     margin-bottom: 20px;
     vertical-align: sub;
     line-height: 30px;
+}
+
+.download{
+    font-size: 0.8em;
+    color: grey;
+    margin-bottom: 10px;
+    
+}
+.icon-download{
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    margin-right: 10px;
+
+}
+.user{
+    font-size: 1em;
+    margin-top: 10px;
+    
+}
+
+.profile{
+    background-color: grey;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+
 }
 
 /******BOTTONE AGGIUNGI PLAYLIST*****/
@@ -138,7 +174,7 @@ main{
     justify-content: flex-start;
     align-items: flex-start;
     width: calc(100% - 230px);
-    height: 100%;
+    /* height: 100%; */
     padding-top: 100px;
     
 }
@@ -170,17 +206,16 @@ main{
     align-items: flex-start;
     /* flex-wrap: wrap; */
     flex-direction: row;
-    margin-bottom: 20px;
 }
 
 .col{
     flex-basis: calc(100% / 6 - 10px);
-    /* border: 1px solid #fff; */
-    height: 300px;
+    border: 1px solid #fff;
     margin: 0 5px;
     display: flex;
     flex-wrap: no-wrap;
     flex-direction: column;
+
     
 }
 
@@ -210,6 +245,38 @@ footer{
     height: 100px;
     background-color: #282828;
     width: 100%;
+}
+
+#miniature{
+    width: 100px;
+    padding: 10px;
+    float: left;
+    
+}
+.player-col{
+    flex-basis: calc(100% / 3 - 10px);
+    border: 1px solid #fff;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.player-row{
+    justify-content: space-between;
+    align-self: flex-start;
+    flex-basis: calc(100% / 3);
+    border: 1px solid #fff;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.text-player{
+    vertical-align: center;
+}
+
+.text-player h4{
+    line-height: 50px;
 }
 
 
