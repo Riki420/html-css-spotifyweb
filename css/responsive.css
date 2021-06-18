@@ -13,4 +13,25 @@
         flex-wrap: wrap;
         flex-direction: column;
    }
+
+
+}
+
+@media screen and (max-width: 576px){
+    .icon-save {
+        line-height: 0px;
+        margin-right: 0px;
+    }
+    
+
+
+   .col{
+       flex-basis: calc(100% / 2 - 10px);
+       margin: 0 5px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+   }
+
+
 }

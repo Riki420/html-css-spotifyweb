@@ -213,8 +213,10 @@ main{
 .row{
     display: flex;
     align-items: flex-start;
+    justify-content: flex-start;
     flex-wrap: wrap;
     flex-direction: row;
+    flex-shrink: 1;
 }
 
 .col{
