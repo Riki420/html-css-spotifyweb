@@ -35,3 +35,25 @@
 
 
 }
+
+@media screen and (max-width: 360px){
+    .icon-save {
+        line-height: 0px;
+        margin-right: 0px;
+    }
+    
+
+
+   .col{
+       flex-basis: 100%;
+       margin: 0 5px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+   }
+
+   .nav{
+       width: 60px;
+   }
+
+}
