@@ -83,6 +83,15 @@
     #logo-small{
         display: inline;
     }
+    .play-bottom{
+        width: 70%;
+        text-align: center;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-content: center;
+        line-height: 10px;
+    }
 
 }
 

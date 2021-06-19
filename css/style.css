@@ -30,6 +30,13 @@ img{
     vertical-align: sub;
 }
 
+.clearfix::after{
+    content: '';
+    clear: both;
+    display: block;
+    
+}
+
 
 .wrapper{
     height: calc(100vh - 100px);
@@ -106,7 +113,7 @@ nav .second-nav li{
 nav .main-nav a,
 nav .second-nav a{
     text-decoration: none;
-    color: white;
+    color: grey;
 }
 
 .second-nav{
@@ -172,6 +179,7 @@ nav .second-nav a{
     float: left;
     content: '+';
     text-align: center;
+    color: #fff;
 }
 
 .btn-plus:hover{
@@ -207,7 +215,7 @@ main{
 
 .nav-albm ul{
     list-style-type: none;
-    color: #fff;
+    color: grey;
     text-align: center;
     margin-bottom: 20px;
 }
@@ -282,7 +290,6 @@ footer{
 
 #miniature{
     width: 100px;
-    padding: 10px;
     float: left;
     
 }
@@ -332,6 +339,10 @@ footer{
     margin-right: 20px;
 }
 
+.play-up .far{
+    font-size: 1.5em;
+}
+
 .far,
 .fas{
     margin-right: 20px;
@@ -354,6 +365,25 @@ footer{
     background-color: #fff;
     border-radius: 4px;
 }
+
+.dot-load{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    float: right;
+    display: none;
+    background-color: yellowgreen;
+}
+
+.dot-load:hover{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    float: right;
+    visibility: visible;
+    
+}
+
 .volume{
     flex-grow: 1;
     line-height: 100px;
@@ -362,7 +392,7 @@ footer{
 .line-volume{
     width: 80%;
     height: 10px;
-    background-color: #dada;
+    background-color: grey;
     margin: 0 5px;
     border-radius: 4px;
 
@@ -405,13 +435,13 @@ footer .fas:last-child{
 
 /****EFFETTI HOVER***/
 
-nav .main-nav li:hover,
-nav .second-nav li:hover{
-    border-left: 2px solid green;
+nav .main-nav li a:hover,
+nav .second-nav li a:hover{
+    color: #fff;
 }
 
-.nav-albm ul li:hover{
-    border-bottom: 2px solid green;
+.nav-albm ul li a:hover{
+    color: #fff;
 
 }
 
@@ -425,4 +455,17 @@ nav .second-nav li:hover{
     margin-right: 10px;
     transform: scale(1);    
 
+}
+
+[alt*="playlist"]:hover{
+    filter: opacity(0.5);
+    content: 'f144';
+    font-family: "Font Awesome 5 Free";
+    font-size: 600;
+    color: white;
+}
+
+.line-small:hover{
+    background-color: yellowgreen;
+    cursor: pointer;
 }
