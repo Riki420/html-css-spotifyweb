@@ -1,3 +1,25 @@
+/*BREAKPOINT LG*/
+@media screen and (max-width: 1092px){
+    .icon-save {
+        line-height: 0px;
+        margin-right: 0px;
+        margin-top: 30px;
+    }
+    
+
+   .col{
+       flex-basis: calc(100% / 4 - 10px);
+       margin: 0 5px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+   }
+
+
+
+}
+
+
 /*BREAKPOINT MD*/
 @media screen and (max-width: 768px){
     .icon-save {
@@ -37,33 +59,31 @@
         flex-direction: column;
    }
 
-
-}
-
-/*BREAKPOINT XS*/
-
-@media screen and (max-width: 375px){
-    .icon-save {
-        line-height: 0px;
-        margin-right: 0px;
-    }
-    
-
-
-   .col{
-       flex-basis: 100%;
-       margin: 0 5px;
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: column;
-   }
-
    nav{
-       width: 60px;
+        width: 60px;
    }
-   
+
    header{
        width: calc(100% - 60px);
    }
 
+   .mobile-none,
+   .second-nav{
+       display: none;
+   }
+   
+   .icon{
+        width: 100%;
+        vertical-align: sub;
+    }
+
+    #logo{
+        display: none;
+    }
+    #logo-small{
+        display: inline;
+    }
+
 }
+
+
