@@ -200,6 +200,10 @@ nav .second-nav{
     margin-right: 10px;
 }
 
+.btn-plus:hover{
+    transform: scale(1);
+}
+
 .btn-plus::after{
     font-size: 1.5em;
     background-color: grey;
@@ -211,15 +215,7 @@ nav .second-nav{
     color: #fff;
 }
 
-.btn-plus:hover{
-    font-size: 1.5em;
-    background-color: grey;
-    width: 30px;
-    height: 30px;
-    float: left;
-    margin-right: 10px;
-    transform: scale(1);
-}
+
 
 /******SEZIONE ALBUM******/
 main{
@@ -281,6 +277,7 @@ main{
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
+    position: relative;
 
     
 }
@@ -313,23 +310,46 @@ main{
     border-radius: 50%;
 }
 
-.play-icon{
+.sctn-img{
     position: relative;
-    top: 120px;
-    left: 80px;
-    font-size: 2em;
-    display: none;
-    
-    
+    width: 100%;
+    height: 100%;
 }
 
-.play-icon:hover{
-    position: relative;
-    top: 120px;
-    left: 80px;
+.play-icon{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     font-size: 2em;
-    color: #fff;
-    
+    width: 100%;
+    height: 100%;
+    color:#fff;
+
+}
+
+
+.play-icon i{
+    display: none;
+}
+
+.sctn-img{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+.play-icon:hover i{
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color:  rgba(0, 0, 0, 0.5); 
+
 }
 
 
