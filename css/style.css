@@ -133,8 +133,9 @@ nav .second-nav a,
 }
 
 
-.second-nav{
+nav .second-nav{
     overflow-y: scroll;
+    height: 40%;
 }
 
 .playlist-text{
@@ -310,6 +311,8 @@ footer{
     height: 100px;
     background-color: #282828;
     width: 100%;
+    position: relative;
+    z-index: 1;
     
 }
 
