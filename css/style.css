@@ -225,6 +225,7 @@ main{
     width: calc(100% - 230px);
     /* height: 100%; */
     padding-top: 100px;
+    padding-left: 10px;
     
 }
 .sctn-albm{
@@ -245,11 +246,11 @@ main{
     margin-right: 20px;
 }
 
-.active::after{
-    width: 30%;
+/* .active{
+    width: 20%;
     height: 10px;
     background-color:  yellowgreen;
-}
+} */
 
 .nav-albm ul li a{
     text-decoration: none;
