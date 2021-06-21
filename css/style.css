@@ -313,6 +313,26 @@ main{
     border-radius: 50%;
 }
 
+.play-icon{
+    position: relative;
+    top: 120px;
+    left: 80px;
+    font-size: 2em;
+    display: none;
+    
+    
+}
+
+.play-icon:hover{
+    position: relative;
+    top: 120px;
+    left: 80px;
+    font-size: 2em;
+    color: #fff;
+    
+}
+
+
 
 /****SEZIONE DEL PLAYER****/
 
@@ -504,11 +524,8 @@ nav .second-nav li a:hover,
 
 [alt*="playlist"]:hover{
     filter: opacity(0.5);
-    content: 'f144';
-    font-family: "Font Awesome 5 Free";
     font-size: 600;
     text-align: center;
-    line-height: 50px;
     color: white;
 }
 
