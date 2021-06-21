@@ -67,14 +67,20 @@ header{
 }
 .btn{
     font-size: 1.2em;
-    padding: 10px 50px;
+    padding: 10px 25px;
     border: 1px solid #fff;
     border-radius: 220px;
     color: #fff;
     line-height: 10vh;
     margin-right: 10px;
+    width: 100px;
+    height: 50px;
     
 
+}
+
+.btn:hover{
+    transform: scale(1);   
 }
 
 .mt-20{
@@ -108,6 +114,10 @@ nav .main-nav li,
 nav .second-nav li{
     margin-bottom: 10px;
 
+}
+
+nav .main-nav li:first-child{
+    border-left: 2px solid yellowgreen;
 }
 
 nav .main-nav a,
@@ -223,6 +233,10 @@ main{
 .nav-albm ul li{
     display: inline;
     margin-right: 20px;
+}
+
+.nav-albm ul li:first-child{
+    border-bottom: 1px solid yellowgreen;
 }
 
 .nav-albm ul li a{
@@ -380,7 +394,7 @@ footer{
     height: 20px;
     border-radius: 50%;
     float: right;
-    visibility: visible;
+    display: inline;
     
 }
 
@@ -397,9 +411,6 @@ footer{
     border-radius: 4px;
 
 }
-
-
-
 
 .column-flex{
     display: flex;
@@ -432,7 +443,6 @@ footer .fas:last-child{
 }
 
 
-
 /****EFFETTI HOVER***/
 
 nav .main-nav li a:hover,
@@ -462,6 +472,8 @@ nav .second-nav li a:hover{
     content: 'f144';
     font-family: "Font Awesome 5 Free";
     font-size: 600;
+    text-align: center;
+    line-height: 50px;
     color: white;
 }
 
