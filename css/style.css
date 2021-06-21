@@ -180,6 +180,15 @@ nav .second-nav{
     margin-right: 10px;
 
 }
+.download a{
+    text-decoration: none;
+    color: grey;
+}
+
+.download a:hover{
+    text-decoration: none;
+    color: #fff;
+}
 
 /******BOTTONE AGGIUNGI PLAYLIST*****/
 .btn-plus{
