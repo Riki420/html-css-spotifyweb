@@ -263,7 +263,6 @@ main{
     justify-content: flex-start;
     flex-wrap: wrap;
     flex-direction: row;
-    flex-shrink: 1;
 }
 
 .col{
@@ -361,10 +360,16 @@ footer{
     font-size: 0.8em;
 }
 
+.text-player p a{
+    color: grey;
+    text-decoration: none;
+}
+
 .icon-save{
     line-height: 100px;
     float: left;
     margin-right: 20px;
+    color: grey;
 }
 
 .play-up .far{
@@ -503,3 +508,12 @@ nav .second-nav li a:hover,
     cursor: pointer;
 }
 
+.text-player p a:hover{
+    text-decoration: underline;
+}
+
+.icon-save .far:hover{
+    color: #fff;
+    transform: scale(1);
+    cursor: pointer;
+}

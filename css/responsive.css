@@ -37,7 +37,10 @@
         flex-direction: column;
    }
 
-
+   .text-player .title-song,
+   .text-player p{
+       margin: 0 10px;
+   }
 
 }
 
@@ -85,7 +88,7 @@
     }
 
     .play-bottom{
-        width: 70%;
+        width: 60%;
         text-align: center;
         display: flex;
         flex-direction: row;
