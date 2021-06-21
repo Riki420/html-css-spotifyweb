@@ -100,6 +100,7 @@ nav{
     width: 230px; 
     padding: 20px; 
     position: relative;
+    min-height: 500px;
 }
 
 nav .main-nav,
@@ -121,26 +122,30 @@ nav .main-nav li:first-child{
 }
 
 nav .main-nav a,
-nav .second-nav a{
+nav .second-nav a,
+.playlist-text a{
     text-decoration: none;
     color: grey;
 }
 
+
 .second-nav{
-    overflow-y: auto;
+    overflow-y: scroll;
 }
 
-.second-nav li:first-child{
+.playlist-text{
     margin-bottom: 20px;
     vertical-align: sub;
     line-height: 30px;
+    overflow: hidden; 
 }
 
 .nav-bottom{
     position: absolute;
     bottom: 0;
-    left: 20px;
+    left: 0px;
     padding-bottom: 10px;
+    width: 100%;
 }
 
 .download{
@@ -235,8 +240,10 @@ main{
     margin-right: 20px;
 }
 
-.nav-albm ul li:first-child{
-    border-bottom: 1px solid yellowgreen;
+.active::after{
+    width: 30%;
+    height: 10px;
+    background-color:  yellowgreen;
 }
 
 .nav-albm ul li a{
@@ -315,7 +322,6 @@ footer{
     align-content: center;
     align-self: center;
 
-
 }
 
 .player-row{
@@ -387,6 +393,7 @@ footer{
     float: right;
     display: none;
     background-color: yellowgreen;
+
 }
 
 .dot-load:hover{
@@ -394,7 +401,12 @@ footer{
     height: 20px;
     border-radius: 50%;
     float: right;
+    position: relative;
+    right: 0;
+    top: 0;
+    background-color: #fff;
     display: inline;
+
     
 }
 
@@ -446,7 +458,8 @@ footer .fas:last-child{
 /****EFFETTI HOVER***/
 
 nav .main-nav li a:hover,
-nav .second-nav li a:hover{
+nav .second-nav li a:hover,
+.playlist-text a:hover{
     color: #fff;
 }
 
@@ -481,3 +494,4 @@ nav .second-nav li a:hover{
     background-color: yellowgreen;
     cursor: pointer;
 }
+
